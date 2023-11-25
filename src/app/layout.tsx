@@ -1,5 +1,4 @@
-import type { Metadata } from "next";
-import { Figtree, Inter } from "next/font/google";
+import { Figtree } from "next/font/google";
 import { Header } from "./_components/header";
 import { Footer } from "./_components/footer/footer";
 import "./globals.css";

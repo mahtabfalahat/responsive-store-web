@@ -68,7 +68,15 @@ const config: Config = {
     colors: tailwindColors,
     container: {
         center: true
-    }
+    } , 
+    extend: {
+      gridTemplateColumns: {
+        sidebar: "300px auto", 
+      }, 
+      gridTemplateRows: {
+        header: "64px auto", 
+      },
+    },
   },
   darkMode: "class",
   plugins: [],

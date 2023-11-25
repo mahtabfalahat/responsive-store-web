@@ -6,8 +6,8 @@ import { usePathname } from "next/navigation";
 export const TopNavigation: React.FC = () => {
   const menuItems: NavigationMenuItem[] = [
     { title: "main", href: "/" },
-    { title: "about us", href: "/aboutUs" },
-    { title: "contactus", href: "/contsctUs" },
+    { title: "products", href: "/products" },
+    { title: "contact us", href: "/contsctUs" },
   ];
 
   const pathname = usePathname();
