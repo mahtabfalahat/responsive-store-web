@@ -1,14 +1,16 @@
 import React from "react";
-
-interface SidebarProps {
+type FilterSidebarProps = {
   isOpen: boolean;
-}
+  onClose: () => void;
+};
 
-export const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
+const FilterSidebar: React.FC<FilterSidebarProps> = ({ isOpen, onClose }) => {
   return (
-    <div className={`fixed top-0 left-0 h-full bg-gray-100 w-64 transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
-      <button className="absolute top-4 right-4 text-gray-600">Close</button>
-      {/* Sidebar content */}
-    </div>
+    <aside className={`fixed bg-gray  inset-y-0 left-0 w-64 md:w-300 bg-gray-800 text-black transition-all duration-300 transform ${isOpen ? "translate-x-0" : "-translate-x-full"} md:relative md:bg-accent md:text-black md:transition-none`}>
+      <div className="flex items-center justify-between p-4">
+        <div className="text-2xl font-bold">Sidebar</div>
+      </div>
+      filters
+    </aside>
   );
 };

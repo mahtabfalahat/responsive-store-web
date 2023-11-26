@@ -70,12 +70,7 @@ const config: Config = {
         center: true
     } , 
     extend: {
-      gridTemplateColumns: {
-        sidebar: "300px auto", 
-      }, 
-      gridTemplateRows: {
-        header: "64px auto", 
-      },
+    
     },
   },
   darkMode: "class",
