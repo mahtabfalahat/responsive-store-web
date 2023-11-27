@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${figtree.variable} `}>
       <body className="min-h-screen grid grid-rows-[80px_1fr_auto] dark:bg-base-content dark:text-base-content">
-        <div className="flex flex-col ">
+        <div className="flex flex-col  min-h-screen ">
           <Header />
           <div className="flex flex-grow">
             <Sidebar />

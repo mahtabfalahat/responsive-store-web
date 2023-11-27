@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 export const TopNavigation: React.FC = () => {
   const menuItems: NavigationMenuItem[] = [
-    { title: "products", href: "/" },
+    { title: "products", href: "/products" },
     { title: "blog", href: "/blog" },
   ];
 
