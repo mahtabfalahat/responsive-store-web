@@ -15,7 +15,7 @@ type ProductCardProps = {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
-    <div className="max-w-xs rounded overflow-hidden shadow-lg mr-1">
+    <div className="max-w-xs rounded overflow-hidden shadow-lg hover:cursor-pointer transition duration-300 transform hover:shadow-xl hover:scale-80 m-auto ">
       <Image className="w-full" src={productImg} alt={product.name} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{product.name}</div>
