@@ -2,12 +2,12 @@ import { TopNavigation } from "./top-navigation";
 export const Header: React.FC = () => {
   return (
     <header className="dark:border-base-content dark:border-opacity-5">
-      <div className=" container flex items-center justify-between p-4 text-center text-neutral-700 dark:text-neutral-200 bg-black border-gray-200 dark:bg-gray-900 shadow-md">
+      {/* <div className=" container flex items-center justify-between p-4 text-center text-neutral-700 dark:text-neutral-200 bg-black border-gray-200 dark:bg-gray-900 shadow-md">
         <TopNavigation />
         <p>search</p>
-      </div>
+      </div> */}
 
-      {/* <nav className="p-4 text-center text-neutral-700 dark:text-neutral-200 bg-black border-gray-200 dark:bg-gray-900 shadow-md">
+      <nav className="p-4 text-center text-neutral-700 dark:text-neutral-200 bg-black border-gray-200 dark:bg-gray-900 shadow-md">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex md:order-2">
             <div className="relative  md:block">
@@ -33,7 +33,7 @@ export const Header: React.FC = () => {
             </div>
           </div>
         </div>
-      </nav> */}
+      </nav>
     </header>
   );
 };
