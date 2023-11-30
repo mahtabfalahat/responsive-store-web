@@ -1,7 +1,6 @@
 import { ProductSummary } from "@/types/product-summary.interface";
-import { ProductList } from "../_components/productList/productList";
+import { ProductList } from "./_components/productList/productList";
 
-// static rendering
 async function getAllProducts(): Promise<ProductSummary[]> {
   const res = await fetch("https://dummyjson.com/products", {
     next: { revalidate: 24 * 60 * 60 },
